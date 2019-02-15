@@ -15,11 +15,16 @@ const Title = styled.h1`
   font-size: 40px;
   color: white;
   padding: 20px;
-  @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-  font-family: 'Indie Flower', cursive;
-`;
+  @import url('https://fonts.googleapis.com/css?family=Righteous');  
+  font-family: 'Righteous', cursive;
+  text-shadow: 4px 4px 4px #aaa;
+  `;
+  
 const Content = styled.p `
   color: white;
+  @import url('https://fonts.googleapis.com/css?family=Barlow');
+  font-family: 'Barlow', sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
 `;
 
 function Body(){
