@@ -19,7 +19,29 @@ const Wrapper = styled.section `
   width: 100%;
   height: 80em;
   border: 1px solid black;
-  background-color: black;
+  
+  background: linear-gradient(270deg, #040d24, #093e54, #065958, #04393d, #03362d);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
 `;
 
 
@@ -47,6 +69,8 @@ class App extends React.Component{
                     }
                 }
             }} />
+            
+            <Body />
           </Wrapper>
         );
     };
