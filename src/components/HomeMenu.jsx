@@ -12,13 +12,14 @@ import github from '../assets/github.svg';
 const MenuWrapper = styled.section`
   position: relative;
   top: 7em;
-  left: 80%;
+  left: 75%;
 `;
 
 const MenuButton = {
   backgroundColor: 'white',
   color: 'black',
   border: 'white solid 1px',
+  borderRadius: '15px',
   padding: '10px'
 }
 

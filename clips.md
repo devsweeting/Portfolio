@@ -22,3 +22,28 @@ animation: AnimationName 30s ease infinite;
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+## Hanging left body styling
+const BodyWrapper = styled.section`
+  border: solid 1px slategrey;
+  border-radius: 30px;
+  width: 40%;
+  position: relative;
+  left: 15em;
+  bottom: 65%;
+  background: black;
+  opacity: 0.7;
+  color: white;
+`;
+
+## Hanging center body styling
+const BodyWrapper = styled.section`
+  width: 120%;
+  height: 200px;
+  position: relative;
+  left: -10px;
+  bottom: 60%;
+  background: black;
+  opacity: 0.7;
+  color: white;
+`;

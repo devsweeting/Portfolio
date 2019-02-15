@@ -3,25 +3,30 @@ import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import ImgMediaCard from './ImgMediaCard';
 import HomeMenu from './HomeMenu';
+import BottomNav from './BottomNav';
+
 
 const BodyWrapper = styled.section`
-  border: solid 1px slategrey;
-  width: 30%;
-  position: relative;
-  left: 10em;
-  bottom: 60%;
+  width: 120%;
+  height: 400px;
+  position: fixed;
+  left: -10px;
+  bottom: 0;
   background: black;
-  /* opacity: 0.7; */
   color: white;
+`;
+
+const ContentWrapper = styled.section `
+margin-left: 20px;
 `;
 
 const Title = styled.h1`
   font-size: 40px;
   color: white;
   padding: 20px;
-  @import url('https://fonts.googleapis.com/css?family=Righteous');  
-  font-family: 'Righteous', cursive;
-  text-shadow: 4px 4px 4px #aaa;
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-shadow: 2px 2px 2px #aaa;
   `;
   
 const Content = styled.p `
@@ -34,9 +39,11 @@ const Content = styled.p `
 function Body(){
   return (
       <BodyWrapper>
+        <ContentWrapper>
         <Title>Devin Sweeting</Title>
 
         <Content>An aspiring develoepr in ruby react. Life is an adventure.</Content>
+        </ContentWrapper>
       </BodyWrapper>
   );
 }

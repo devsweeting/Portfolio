@@ -18,7 +18,7 @@ const Wrapper = styled.section `
   position: fixed; 
   top: 0; 
   left: 0; 
-  width: 100%;
+  width: 110%;
   height: 80em;
   border: 1px solid black;
   
@@ -57,7 +57,7 @@ class App extends React.Component{
               params={{
                 "particles": {
                     "number": {
-                        "value": 200
+                        "value": 300
                     },
                     "size": {
                         "value": 3
