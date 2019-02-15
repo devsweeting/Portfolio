@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from "styled-components";
-import { Body } from './Body';
+import Body from './Body';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -15,7 +15,7 @@ function App(){
   return (
     <div>
       <p>App Component</p>
-      <Body />
+      <Body/>
     </div>
   );
 }
