@@ -14,19 +14,36 @@ const GlobalStyles = createGlobalStyle`
 
 const Wrapper = styled.section `
   max-width: 100%;
-  height: 50em;
+  max-height: 100%;
   border: 1px solid black;
+  background-color: black;
 `;
 
 
 
 class App extends React.Component{
-  
-
     render(){
         return (
           <Wrapper>
-            <Particles width="100em" height="100em"/>
+          <Particles
+              params={{
+                "particles": {
+                    "number": {
+                        "value": 200
+                    },
+                    "size": {
+                        "value": 3
+                    }
+                },
+                "interactivity": {
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        }
+                    }
+                }
+            }} />
           </Wrapper>
         );
     };
