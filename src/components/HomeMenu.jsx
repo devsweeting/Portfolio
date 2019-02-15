@@ -4,20 +4,33 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import styled from 'styled-components';
 import { withStyles } from '@material-ui/core/styles';
+import menu from '../assets/menu.svg';
+import resume from '../assets/resume.svg';
 
 
 const MenuWrapper = styled.section`
   position: relative;
-  top: 10em;
-  left: 90%;
+  top: 7em;
+  left: 80%;
 `;
 
 const MenuButton = {
-  backgroundColor: 'black',
-  color: 'white',
+  backgroundColor: 'white',
+  color: 'black',
   border: 'white solid 1px',
   padding: '10px'
 }
+
+const MenuImage = styled.img`
+  height: 50px;
+  width: 50px;
+  margin-right: 5px;
+`;
+
+const MenuDropImage = styled.img`
+  height: 30px;
+  width: 30px;
+`;
 
   
 class HomeMenu extends React.Component {
@@ -41,8 +54,8 @@ class HomeMenu extends React.Component {
           aria-owns={anchorEl ? 'simple-menu' : undefined}
           aria-haspopup="true"
           onClick={this.handleClick}
-        >
-          Hit Me Up
+        ><MenuImage src={menu}/>
+          Feature in Production
         </Button>
         <Menu
           id="simple-menu"
@@ -50,7 +63,7 @@ class HomeMenu extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-          <MenuItem onClick={this.handleClose}>Resume</MenuItem>
+          <MenuItem onClick={this.handleClose}><MenuDropImage  src={resume}/>Resume</MenuItem>
           <MenuItem onClick={this.handleClose}>Email</MenuItem>
           <MenuItem onClick={this.handleClose}>Github</MenuItem>
         </Menu>
