@@ -8,7 +8,7 @@ import BottomNav from './BottomNav';
 
 const BodyWrapper = styled.section`
   width: 120%;
-  height: 400px;
+  height: 300px;
   position: fixed;
   left: -10px;
   bottom: 0;
@@ -40,9 +40,9 @@ function Body(){
   return (
       <BodyWrapper>
         <ContentWrapper>
-        <Title>Devin Sweeting</Title>
+        <Title>Life is an Adventure</Title>
 
-        <Content>An aspiring develoepr in ruby react. Life is an adventure.</Content>
+        <Content>So down here somewhere we talk about why an employer should hire me, but lets be real, of course they want to hire me. Why would they not, I could've filled this empty space with Lorem Ipsum but instead im frantically typing until this space is filled.</Content>
         </ContentWrapper>
       </BodyWrapper>
   );

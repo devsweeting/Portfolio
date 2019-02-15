@@ -46,4 +46,25 @@ const BodyWrapper = styled.section`
   background: black;
   opacity: 0.7;
   color: white;
-`;
+''';
+
+##Simple Particles
+<Particles
+    params={{
+      "particles": {
+          "number": {
+              "value": 300
+          },
+          "size": {
+              "value": 3
+          }
+      },
+      "interactivity": {
+          "events": {
+              "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+              }
+          }
+      }
+  }} />
