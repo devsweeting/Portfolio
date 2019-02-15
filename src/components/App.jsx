@@ -13,8 +13,11 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const Wrapper = styled.section `
-  max-width: 100%;
-  max-height: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 80em;
   border: 1px solid black;
   background-color: black;
 `;
