@@ -6,7 +6,8 @@ import styled from 'styled-components';
 import { withStyles } from '@material-ui/core/styles';
 import menu from '../assets/menu.svg';
 import resume from '../assets/resume.svg';
-
+import email from '../assets/email.svg';
+import github from '../assets/github.svg';
 
 const MenuWrapper = styled.section`
   position: relative;
@@ -64,8 +65,8 @@ class HomeMenu extends React.Component {
           onClose={this.handleClose}
         >
           <MenuItem onClick={this.handleClose}><MenuDropImage  src={resume}/>Resume</MenuItem>
-          <MenuItem onClick={this.handleClose}>Email</MenuItem>
-          <MenuItem onClick={this.handleClose}>Github</MenuItem>
+          <MenuItem onClick={this.handleClose}><MenuDropImage  src={email}/>Email</MenuItem>
+          <MenuItem onClick={this.handleClose}><MenuDropImage  src={github}/>Github</MenuItem>
         </Menu>
       </MenuWrapper>
     );
