@@ -11,6 +11,8 @@
   "author": "Devin Sweeting",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
     "react": "16.8.1",
     "react-datetime": "^2.16.3",
     "react-dom": "16.8.1",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
