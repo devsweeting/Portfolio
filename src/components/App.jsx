@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     @import url('https://fonts.googleapis.com/css?family=Lato');
     font-family: 'Lato', sans-serif;
+    color: white;
   }
 `;
 
