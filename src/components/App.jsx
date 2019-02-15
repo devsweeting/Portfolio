@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from "styled-components";
 import Body from './Body';
+import HomeMenu from './HomeMenu';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
 
@@ -51,6 +52,7 @@ class App extends React.Component{
     render(){
         return (
           <Wrapper>
+                  <HomeMenu />
           <Particles
               params={{
                 "particles": {

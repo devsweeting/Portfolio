@@ -33,12 +33,11 @@ const Content = styled.p `
 
 function Body(){
   return (
-    <BodyWrapper>
-      <Title>Devin Sweeting</Title>
-      <Content>An aspiring develoepr in ruby react. Life is an adventure.</Content>
-      <ImgMediaCard />
-      <HomeMenu />
-    </BodyWrapper>
+      <BodyWrapper>
+        <Title>Devin Sweeting</Title>
+
+        <Content>An aspiring develoepr in ruby react. Life is an adventure.</Content>
+      </BodyWrapper>
   );
 }
 
