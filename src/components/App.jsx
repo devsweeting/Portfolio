@@ -5,6 +5,7 @@ import Body from './Body';
 import HomeMenu from './HomeMenu';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
+import TitleName from './TitleName';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -13,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     color: white;
   }
 `;
+
 
 const Wrapper = styled.section `
   position: fixed; 
@@ -47,13 +49,11 @@ const Wrapper = styled.section `
 `;
 
 
-
-
 class App extends React.Component{
     render(){
         return (
           <Wrapper>
-            <HomeMenu />
+                    <HomeMenu />
             <Particles
                 params={{
                   "particles": {
@@ -81,7 +81,7 @@ class App extends React.Component{
                   }
               }} 
             />
-              <Body />
+            <Body />
           </Wrapper>
         );
     };

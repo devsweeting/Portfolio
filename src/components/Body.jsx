@@ -24,11 +24,10 @@ const ContentWrapper = styled.section `
 const Title = styled.h1`
   font-size: 20px;
   color: white;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
-  text-shadow: 2px 2px 2px #aaa;
   `;
   
 
