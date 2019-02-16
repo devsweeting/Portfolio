@@ -1,48 +1,47 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import ImgMediaCard from './ImgMediaCard';
 import HomeMenu from './HomeMenu';
-import BottomNav from './BottomNav';
+import DrawerRight from './DrawerRight';
+
 
 
 const BodyWrapper = styled.section`
-  width: 120%;
-  height: 300px;
-  position: fixed;
-  left: -10px;
-  bottom: 0;
+  border: solid 1px slategrey;
+  border-radius: 30px;
+  width: 40%;
+  position: relative;
+  left: 15em;
+  bottom: 65%;
   background: black;
+  opacity: 0.7;
   color: white;
 `;
 
 const ContentWrapper = styled.section `
-margin-left: 20px;
 `;
 
 const Title = styled.h1`
-  font-size: 40px;
+  font-size: 20px;
   color: white;
-  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
   text-shadow: 2px 2px 2px #aaa;
   `;
   
-const Content = styled.p `
-  color: white;
-  @import url('https://fonts.googleapis.com/css?family=Barlow:300');
-  font-family: 'Barlow', sans-serif;
-  text-shadow: 4px 4px 4px #aaa;
-`;
 
 function Body(){
   return (
       <BodyWrapper>
         <ContentWrapper>
-        <Title>Life is an Adventure</Title>
-
-        <Content>So down here somewhere we talk about why an employer should hire me, but lets be real, of course they want to hire me. Why would they not, I could've filled this empty space with Lorem Ipsum but instead im frantically typing until this space is filled.</Content>
+        <Title> 
+        <h1>Devin Sweeting is an Junior Web Developer from Portland, OR</h1>
+        
+        <p>So down here somewhere we talk about why an employer should hire me, but lets be real, of course they want to hire me. Why would they not, I could've filled this empty space with Lorem Ipsum but instead im frantically typing until this space is filled.</p>
+        </Title>
+        <DrawerRight />
         </ContentWrapper>
       </BodyWrapper>
   );
