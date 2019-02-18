@@ -28,6 +28,11 @@ $ npm install
 $ npm run strart
 ```
 
+## Component Tree
+
+# ![demo](src/assets/ComponentTree.png)
+
+
 ## Completed Features
 * Particle background with custom gradient backgroundColor.
 * Draggable Body component
