@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { withStyles } from '@material-ui/core/styles';
 import menu from '../../assets/menu.svg';
 import resume from '../../assets/resume.svg';
-import email from '../../assets/email.svg';
+import mail from '../../assets/email.svg';
 import github from '../../assets/github.svg';
 
 const MenuWrapper = styled.section`

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import HomeMenu from './HomeMenu';
 import DrawerRight from './DrawerRight';
 import Particles from 'react-particles-js';
-import TitleName from './TitleName'; 
+import TitleName from './TitleName';
 
 
 const BodyWrapper = styled.section`

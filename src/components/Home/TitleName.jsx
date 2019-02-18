@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import HomeMenu from './HomeMenu';
 import DrawerRight from './DrawerRight';
-
+import Draggable from 'react-draggable';
 
 
 const BodyWrapper = styled.section`
@@ -33,6 +33,7 @@ const Title = styled.h1`
 
 function Body(){
   return (
+    <Draggable>
       <BodyWrapper>
         <ContentWrapper>
         <Title> 
@@ -43,6 +44,7 @@ function Body(){
         <DrawerRight />
         </ContentWrapper>
       </BodyWrapper>
+    </Draggable>
   );
 }
 
