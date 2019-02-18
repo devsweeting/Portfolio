@@ -59,7 +59,7 @@ function Body(){
             params={{
               "particles": {
                   "number": {
-                      "value": 300,
+                      "value": 150,
                       "density": {
                           "enable": true,
                           "value_area": 1803.4120608655228
@@ -69,7 +69,7 @@ function Body(){
                       "value": "#d38d9f"
                   },
                   "size": {
-                      "value": 8
+                      "value": 5
                   }
               },
               "interactivity": {
