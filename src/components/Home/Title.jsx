@@ -9,13 +9,14 @@ import twitter from '../../assets/twitter.svg';
 import linkedin from '../../assets/linkedin.svg';
 import facebook from '../../assets/facebook.svg';
 import Style from 'style-it';
+import TypingAnimation from './TypingAnimation';
 
 const BodyWrapper = styled.section`
   border-radius: 30px;
   width: auto;
   height: 300px;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 8%;
   padding: 20px;
   opacity: 0.9;
   color: white;
@@ -69,7 +70,7 @@ function Title(){
 
   <BodyWrapper>
     <Header> Hello, I'm Devin! </Header>
-    <Tagline> All-Star Dev | Code Fanatic | Awesome Human | Bleh</Tagline>
+    <Tagline> All-Star Dev | Code Fanatic | <TypingAnimation /></Tagline>
     <IconsList>
     <a target="_blank" href="https://github.com/devsweeting">
       <Icon className="transform" src={github}  />
@@ -91,10 +92,12 @@ function Title(){
     </a>
     </IconsList>
 
-    <Link to="/about"><Arrow src={arrowdown}/></Link>
+    <Link to="/about"><Arrow className="transform" src={arrowdown}/></Link>
   </BodyWrapper>
   );
 }
+
+
 
 
 export default Title;

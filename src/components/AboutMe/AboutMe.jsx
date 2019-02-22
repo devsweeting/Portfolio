@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Selfie from './Selfie';
 import LifeStory from './LifeStory';
+import Contact from './Contact';
 
 const Wrapper = styled.section`
 width: 100%;
@@ -33,8 +34,10 @@ function AboutMe(){
   }
 
   const b = {
+    backgroundColor: "#444",
     gridColumn: '2',
     gridRow: '1',
+    color: '#fff',
     margin: '20px',
     boxShadow: '10px 10px 5px black'
   }
@@ -54,7 +57,7 @@ function AboutMe(){
       <div style={wrapper}>
         <Box style={a}><Selfie /></Box>
         <Box style={b}><LifeStory /></Box>
-        <Box style={c}>Personal Contact</Box>
+        <Box style={c}><Contact /></Box>
       </div>
     </Wrapper>
   );
