@@ -11,8 +11,8 @@ function Body(){
       <div>
         <ParticlesView/>
         <Title />
+        <AboutMe />
       </div>
-      <AboutMe />
     </div>
   );
 }

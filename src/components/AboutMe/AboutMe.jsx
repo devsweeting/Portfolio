@@ -1,19 +1,19 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import Selfie from './Selfie';
+import LifeStory from './LifeStory';
 
 const Wrapper = styled.section`
 width: 100%;
-position: fixed;
-bottom: 0;
+position: relative;
+margin-top: 500px;
 `;
 
 const Box = styled.section`
-  background-color: #444;
   color: #fff;
   border-radius: 50px;
   padding: 20px;
-  font-size:150%;
 `;
 
 function AboutMe(){
@@ -27,22 +27,20 @@ function AboutMe(){
     }
 
   const a = {
-    backgroundColor: "#444",
     gridColumn: '1',
     gridRow: '1',
     margin: '20px',
-    boxShadow: '10px 10px 10px black'
   }
 
   const b = {
     gridColumn: '2',
     gridRow: '1',
-    color: '#fff',
     margin: '20px',
     boxShadow: '10px 10px 5px black'
   }
 
   const c = {
+    backgroundColor: "#444",
     gridColumn: '3',
     gridRow: '1',
     color: '#fff',
@@ -54,8 +52,8 @@ function AboutMe(){
   return (
     <Wrapper>
       <div style={wrapper}>
-        <Box style={a}>Picture of me</Box>
-        <Box style={b}>Life Story</Box>
+        <Box style={a}><Selfie /></Box>
+        <Box style={b}><LifeStory /></Box>
         <Box style={c}>Personal Contact</Box>
       </div>
     </Wrapper>
