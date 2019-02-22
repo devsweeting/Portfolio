@@ -50,7 +50,7 @@ function ParticlesView(){
                       "value": "#d38d9f"
                   },
                   "size": {
-                      "value": 5
+                      "value": 0
                   }
               },
               "interactivity": {

@@ -7,33 +7,31 @@ import Draggable from 'react-draggable';
 
 
 const BodyWrapper = styled.section`
-  border-radius: 30px;
-  width: auto;
-  height: 300px;
-  margin: 0 auto;
-  margin-top: 10%;
+  height: 400px;
+  margin-left: 258px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
   padding: 20px;
-  opacity: 0.7;
+  background: black;
   color: white;
 `;
 
-const Icons = styled.section `
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
+const ContentWrapper = styled.section `
+  background: red;
 `;
 
 const Title = styled.h1`
-  font-size: 100px;
+  font-size: 50px;
   color: white;
   text-align: center;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
   `;
   
-const Tagline= styled.h1`
+const SubHeader= styled.h1`
   margin-top: -5;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   text-align: center;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
@@ -43,17 +41,14 @@ const Tagline= styled.h1`
 
 function Body(){
   return (
-      <BodyWrapper>
-        <Title> Hello, I'm Devin! </Title>
-        <Tagline> All-Star Dev | Code Fanatic | Awesome Human | Bleh</Tagline>
-        <Icons>  
-        <a target="_blank" href="https://github.com/flexdinesh">Github |</a>
-  			<a target="_blank" href="https://twitter.com/flexdinesh">| Twitter |</a>
-  			<a target="_blank" href="https://www.linkedin.com/in/dineshpandiyan">| linkedin |</a>
-  			<a target="_blank" href="https://www.freecodecamp.org">| FaceBook |</a>
-  			<a target="_blank" href="https://www.behance.net">| Email |</a>
-        </Icons>
-      </BodyWrapper>
+      <ContentWrapper>
+        <BodyWrapper>  
+        <Title> Devin Sweeting </Title>
+        <SubHeader>Junior Web Developer</SubHeader>
+          <p>So down here somewhere we talk about why an employer should hire me, but lets be real, of course they want to hire me. Why would they not, I could've filled this empty space with Lorem Ipsum but instead im frantically typing until this space is filled.</p>    
+          <DrawerRight />  
+        </BodyWrapper>
+      </ContentWrapper>
   );
 }
 

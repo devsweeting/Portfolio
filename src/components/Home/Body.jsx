@@ -5,6 +5,7 @@ import DrawerRight from './DrawerRight';
 import Particles from 'react-particles-js';
 import TitleName from './TitleName';
 import ParticlesView from './ParticlesView';
+import AboutMe from './AboutMe';
 
 
 function Body(){
