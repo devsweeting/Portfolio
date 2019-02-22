@@ -2,9 +2,6 @@ import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import HomeMenu from './HomeMenu';
-import DrawerRight from './DrawerRight';
-import Draggable from 'react-draggable';
 import arrowdown from '../../assets/arrowdown.svg';
 import resume from '../../assets/resume.svg';
 import email from '../../assets/email.svg';
@@ -84,7 +81,7 @@ function Title(){
         <a target="_blank" href="mailto:devinsweeting@gmail.com">
           <Icon src={email} target="_blank" />
         </a>
-        <a target="_blank" href="devinsweeting@gmail.com">
+        <a target="_blank" href="Load pdf">
           <Icon src={resume} target="_blank" />
         </a>
         </IconsList>
