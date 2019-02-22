@@ -1,11 +1,20 @@
 import React from "react";
 import Body from './Home/Body';
+import AboutMe from './AboutMe';
+import { Switch, Route } from 'react-router-dom';
+
+
+
 
 class App extends React.Component{
     render(){
         return (
           <div>
-            <Body />
+<Switch>
+<Route exact path='/' component={Body} />
+<Route path='/about' component={AboutMe} />
+<AboutMe/>
+</Switch>
           </div>
         );
     };

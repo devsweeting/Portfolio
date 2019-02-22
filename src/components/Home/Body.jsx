@@ -1,11 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
 import HomeMenu from './HomeMenu';
+import AboutMe from '../AboutMe';
 import DrawerRight from './DrawerRight';
 import Particles from 'react-particles-js';
 import Title from './Title';
 import ParticlesView from './ParticlesView';
-import AboutMe from './AboutMe';
 
 
 function Body(){
@@ -13,6 +13,7 @@ function Body(){
       <div>
         <ParticlesView/>
         <Title />
+        <AboutMe />
       </div>
   );
 }

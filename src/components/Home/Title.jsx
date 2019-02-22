@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import HomeMenu from './HomeMenu';
 import DrawerRight from './DrawerRight';
@@ -44,12 +45,6 @@ const Tagline= styled.h1`
   font-family: 'IBM Plex Sans', sans-serif;
   `;
 
-const Link = styled.a`
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-`;
-
 const Icon = styled.img`
   color: white;
   height: 60px;
@@ -58,9 +53,13 @@ const Icon = styled.img`
 
 const Arrow = styled.img`
   height: 100px;
-  position: fixed;
-  bottom: 0;
-  left: 50%
+  margin-bottom: 100px;
+  position: relative;
+  left: 45%;
+  top: 80px;
+`;
+
+const Pulsate = styled.section`
 `;
 
 
@@ -82,7 +81,7 @@ function Title(){
         <a target="_blank" href="https://www.linkedin.com/in/devinsweeting/">
           <Icon src={facebook} target="_blank" />
         </a>
-        <a target="_blank" href="devinsweeting@gmail.com">
+        <a target="_blank" href="mailto:devinsweeting@gmail.com">
           <Icon src={email} target="_blank" />
         </a>
         <a target="_blank" href="devinsweeting@gmail.com">
@@ -90,7 +89,7 @@ function Title(){
         </a>
         </IconsList>
 
-        <Arrow src={arrowdown}/>
+        <Link to="/about"><Arrow src={arrowdown}/></Link>
       </BodyWrapper>
   );
 }
