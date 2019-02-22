@@ -6,26 +6,34 @@ import DrawerRight from './DrawerRight';
 import Draggable from 'react-draggable';
 
 
-const BodyWrapper = styled.section`
-  border: solid 1px slategrey;
-  border-radius: 30px;
-  width: 40%;
-  position: relative;
-  left: 15em;
-  bottom: 65%;
+const ContentWrapper = styled.section`
+  padding: 20px;
   background: black;
-  opacity: 0.7;
+  opacity: 0.8;
   color: white;
-`;
-
-const ContentWrapper = styled.section `
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 `;
 
 const Title = styled.h1`
-  font-size: 20px;
+  font-size: 50px;
   color: white;
-  padding-left: 40px;
-  padding-right: 40px;
+  text-align: center;
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
+  font-family: 'IBM Plex Sans', sans-serif;
+  `;
+  
+const SubHeader= styled.h1`
+  margin-top: -5;
+  font-size: 30px;
+  color: white;
+  text-align: center;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
   `;
@@ -33,18 +41,12 @@ const Title = styled.h1`
 
 function Body(){
   return (
-    <Draggable>
-      <BodyWrapper>
-        <ContentWrapper>
-        <Title> 
-        <h1>Devin Sweeting is an Junior Web Developer from Portland, OR</h1>
-        
-        <p>So down here somewhere we talk about why an employer should hire me, but lets be real, of course they want to hire me. Why would they not, I could've filled this empty space with Lorem Ipsum but instead im frantically typing until this space is filled.</p>
-        </Title>
-        <DrawerRight />
-        </ContentWrapper>
-      </BodyWrapper>
-    </Draggable>
+      <ContentWrapper>  
+        <Title> Devin Sweeting </Title>
+        <SubHeader>Junior Web Developer</SubHeader>
+        <DrawerRight />  
+          <p>So down here somewhere we talk about why an employer should hire me, but lets be real, of course they want to hire me. Why would they not, I could've filled this empty space with Lorem Ipsum but instead im frantically typing until this space is filled.</p>    
+      </ContentWrapper>
   );
 }
 
