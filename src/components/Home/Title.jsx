@@ -1,5 +1,4 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrowdown from '../../assets/arrowdown.svg';
@@ -32,7 +31,7 @@ const Header= styled.h1`
   text-align: center;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
-  `;
+`;
 
 const Tagline= styled.h1`
   font-size: 40px;
@@ -40,13 +39,12 @@ const Tagline= styled.h1`
   text-align: center;
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
-  `;
+`;
 
 const Icon = styled.img`
   color: white;
   height: 60px;
 `;
-
 
 const Arrow = styled.img`
   height: 100px;
@@ -55,10 +53,6 @@ const Arrow = styled.img`
   left: 45%;
   top: 80px;
 `;
-
-const Pulsate = styled.section`
-`;
-
 
 function Title(){
   return (

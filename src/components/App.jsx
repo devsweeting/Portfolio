@@ -13,7 +13,6 @@ class App extends React.Component{
 <Switch>
 <Route exact path='/' component={Body} />
 <Route path='/about' component={AboutMe} />
-<AboutMe/>
 </Switch>
           </div>
         );
