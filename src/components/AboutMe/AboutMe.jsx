@@ -57,7 +57,7 @@ function AboutMe(){
       <div style={wrapper}>
         <Box style={a}><Selfie /></Box>
         <Box style={b}><LifeStory /></Box>
-        <Box style={c}><Contact /></Box>
+        <Box style={c} id="aboutme"><Contact /></Box>
       </div>
     </Wrapper>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrowdown from '../../assets/arrowdown.svg';
 import resume from '../../assets/resume.svg';
@@ -10,6 +9,7 @@ import linkedin from '../../assets/linkedin.svg';
 import facebook from '../../assets/facebook.svg';
 import Style from 'style-it';
 import TypingAnimation from './TypingAnimation';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const BodyWrapper = styled.section`
   border-radius: 30px;
@@ -99,7 +99,15 @@ function Title(){
     </a>
     </IconsList>
 
-    <Link to="/about"><Arrow className="transform" src={arrowdown}/></Link>
+    <Link
+    activeClass="active"
+    to="aboutme"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+    >
+    <Arrow className="transform" src={arrowdown}/></Link>
   </BodyWrapper>
   );
 }
