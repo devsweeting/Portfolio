@@ -78,24 +78,24 @@ function Title(){
     <Header> Hello, I'm Devin! </Header>
     <Tagline> All-Star Dev | Code Fanatic | <TypingAnimation /> </Tagline>
     <IconsList>
-    <a target="_blank" href="https://github.com/devsweeting">
-      <Icon className="transform" src={github}  />
+    <a className="transform" target="_blank" href="https://github.com/devsweeting">
+      <Icon src={github}  />
     </a>
-    <a target="_blank" href="https://twitter.com/wholly_ravioli">
-      <Icon className="transform" src={twitter}/>
+    <a className="transform" target="_blank" href="https://twitter.com/wholly_ravioli">
+      <Icon src={twitter} />
     </a>
-    <a target="_blank" href="https://www.linkedin.com/in/devinsweeting/">
-      <Icon className="transform" src={linkedin}/>
+    <a className="transform" target="_blank" href="https://www.linkedin.com/in/devinsweeting/">
+      <Icon src={linkedin} />
     </a>
-    <a target="_blank" href="https://www.linkedin.com/in/devinsweeting/">
-      <Icon className="transform" src={facebook}/>
+    <a className="transform" target="_blank" href="https://www.linkedin.com/in/devinsweeting/">
+      <Icon src={facebook} />
     </a>
-    <a target="_blank" href="mailto:devinsweeting@gmail.com">
-      <Icon className="transform" src={email} target="_blank" />
+    <a className="transform" target="_blank" target="_blank" href="mailto:devinsweeting@gmail.com">
+      <Icon src={email} />
     </a>
-    <a target="_blank" href="Load pdf">
-      <Icon className="transform" src={resume}/>
-        <h6 style={h6}> Resume </h6>
+    <a className="transform" target="_blank" href="Load pdf">
+      <Icon src={resume} />
+      <h6 style={h6}> Resume </h6>
     </a>
     </IconsList>
 
