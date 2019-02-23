@@ -15,13 +15,13 @@ function TypingAnimation(){
             <Typing.Backspace count={20} delay={2000} />
             <span>Ruby on Rails</span>
             <Typing.Backspace count={20} delay={1000} />
-            <span>Awesome Human</span>
+            <span>Design</span>
             <Typing.Backspace count={20} delay={1000} />
             <span>Angular</span>
             <Typing.Backspace count={20} delay={1000} />
-            <span>Cat Daddy</span>
-            <Typing.Backspace count={20} delay={1000} />
             <span>React</span>
+            <Typing.Backspace count={20} delay={1000} />
+            <span>Cat Daddy</span>
             <Typing.Backspace count={20} delay={1000} />
         </Typing>
         </div>

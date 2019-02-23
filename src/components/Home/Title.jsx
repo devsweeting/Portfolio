@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import arrowdown from '../../assets/arrowdown.svg';
 import resume from '../../assets/resume.svg';
 import email from '../../assets/email.svg';
-import github from '../../assets/github.png';
+import github from '../../assets/github.svg';
 import twitter from '../../assets/twitter.svg';
 import linkedin from '../../assets/linkedin.svg';
 import facebook from '../../assets/facebook.svg';
@@ -63,6 +63,9 @@ const Arrow = styled.img`
 `;
 
 function Title(){
+  const h6 = {
+    color: "#F4F4F4"
+  }
 
   return Style.it(`
   .transform:hover {
@@ -92,6 +95,7 @@ function Title(){
     </a>
     <a target="_blank" href="Load pdf">
       <Icon className="transform" src={resume}/>
+        <h6 style={h6}> Resume </h6>
     </a>
     </IconsList>
 
