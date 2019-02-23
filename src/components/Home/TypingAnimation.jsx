@@ -11,13 +11,17 @@ function TypingAnimation(){
         <Typing loop={true}>
             <span>Web Developer</span>
             <Typing.Backspace count={20} delay={1000} />
-            <span>Baller</span>
-            <Typing.Backspace count={20} delay={1000} />
-            <span>Cat Daddy</span>
+            <span>Baller 🏀 </span>
+            <Typing.Backspace count={20} delay={2000} />
+            <span>Ruby on Rails</span>
             <Typing.Backspace count={20} delay={1000} />
             <span>Awesome Human</span>
             <Typing.Backspace count={20} delay={1000} />
-            <span>Outgoing</span>
+            <span>Angular</span>
+            <Typing.Backspace count={20} delay={1000} />
+            <span>Cat Daddy</span>
+            <Typing.Backspace count={20} delay={1000} />
+            <span>React</span>
             <Typing.Backspace count={20} delay={1000} />
         </Typing>
         </div>

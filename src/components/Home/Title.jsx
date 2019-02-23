@@ -22,10 +22,6 @@ const BodyWrapper = styled.section`
   color: white;
 `;
 
-const IconsList = styled.section `
-  display: flex;
-  justify-content: space-around;
-`;
 
 const Header= styled.h1`
   font-size: 100px;
@@ -42,6 +38,13 @@ const Tagline= styled.h1`
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
   font-family: 'IBM Plex Sans', sans-serif;
 `;
+
+const IconsList = styled.section `
+display: flex;
+justify-content: space-around;
+margin-top: 50px;
+`;
+
 
 const Icon = styled.img`
   color: white;
@@ -70,7 +73,7 @@ function Title(){
 
   <BodyWrapper>
     <Header> Hello, I'm Devin! </Header>
-    <Tagline> All-Star Dev | Code Fanatic | <TypingAnimation /></Tagline>
+    <Tagline> All-Star Dev | Code Fanatic | <TypingAnimation /> </Tagline>
     <IconsList>
     <a target="_blank" href="https://github.com/devsweeting">
       <Icon className="transform" src={github}  />
