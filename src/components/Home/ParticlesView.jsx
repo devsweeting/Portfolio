@@ -37,10 +37,16 @@ function ParticlesView(){
   return (
       <BodyWrapper>
         <Particles
+          style={{
+            position: "absolute",
+            top: 0,
+            width: "100%",
+            height: "100%",
+          }}
             params={{
               "particles": {
                   "number": {
-                      "value": 200,
+                      "value": 150,
                       "density": {
                           "enable": true,
                           "value_area": 1803.4120608655228
