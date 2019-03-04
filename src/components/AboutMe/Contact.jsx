@@ -31,7 +31,7 @@ function Contact(){
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Example textarea</Form.Label>
+            <Form.Label>Enter your message</Form.Label>
             <Form.Control name="message" as="textarea" rows="3" />
           </Form.Group>
           <Button variant="primary" type="submit" value="Send">

@@ -16,9 +16,7 @@ function LifeStory(){
 
     <Wrapper>
       <p> Born and Raised in the Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisi id ligula faucibus condimentum eu quis magna. Vestibulum lobortis imperdiet cursus. Curabitur tempus lectus quis turpis faucibus cursus. Pellentesque quis posuere arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam volutpat lectus vel ultrices mattis. Quisque in neque ut ex luctus fermentum vitae at mi. Sed laoreet convallis orci, vitae scelerisque dui convallis ac. </p>
-
-        <p>Cras tincidunt ut velit eget elementum. Cras eget rhoncus est, non consequat odio. Duis sodales sem risus, nec posuere eros semper sit amet. Vivamus diam purus, consequat nec sodales molestie, pellentesque id sapien. Vivamus eget purus non metus fringilla varius. Etiam hendrerit vestibulum est nec vestibulum. In ac est lacinia, condimentum risus a, lacinia ante. Vivamus aliquam magna a mauris molestie fringilla. </p>
-        </Wrapper>
+    </Wrapper>
 );
 }
 
