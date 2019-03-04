@@ -8,7 +8,6 @@ top: 0;
 left: 0;
 width: 110%;
 height: 100vh;
-border: 1px solid red;
 
 background: linear-gradient(304deg, #4662b8, #587be8, #52a3cf, #5fb8b2, #3ba16e);
 background-size: 1000% 1000%;
