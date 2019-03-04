@@ -6,9 +6,10 @@ import LifeStory from './LifeStory';
 import Contact from './Contact';
 
 const Wrapper = styled.section`
-width: 100%;
-position: relative;
-margin-top: 500px;
+  width: 100%;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
 `;
 
 const Box = styled.section`

@@ -16,10 +16,11 @@ const BodyWrapper = styled.section`
   width: auto;
   height: 300px;
   margin: 0 auto;
-  margin-top: 8%;
+  margin-top: 15%;
   padding: 20px;
   opacity: 0.9;
   color: white;
+  height: 100vmax;
 `;
 
 
@@ -59,7 +60,7 @@ const Arrow = styled.img`
   margin-bottom: 100px;
   position: relative;
   left: 45%;
-  top: 80px;
+  top: 200px;
 `;
 
 function Title(){
