@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import Selfie from './Selfie';
 import LifeStory from './LifeStory';
 import Contact from './Contact';
+import Dog from './Dog';
 
 const Wrapper = styled.section`
   width: 100%;
   position: relative;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  height: 100vmax;
 `;
 
 const Box = styled.section`
@@ -26,6 +26,7 @@ function AboutMe(){
     gridTemplateColumns: '33% 33% 33%',
     justifyContent: "space-between",
     fontFamily: 'Arial, Helvetica, sans-serif',
+    marginBottom: "800px"
     }
 
   const a = {
@@ -60,6 +61,7 @@ function AboutMe(){
         <Box style={b}><LifeStory /></Box>
         <Box style={c} id="aboutme"><Contact /></Box>
       </div>
+      <Dog />
     </Wrapper>
   );
 }
